@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <section id="left">
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+    <section id="right">
+      <div id="top"><p><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p></div>
+      <div id="content">
+        <form action="#" method="post">
+          <input type="text" name="firstName" id="firstName" placeholder="First Name">
+          <p id="error1" class="error">First Name cannot be empty<img class="iconerror" src="./images/icon-error.svg"></p>
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+          <p id="error2" class="error">Last Name cannot be empty<img class="iconerror" src="./images/icon-error.svg"></p>
+          <input type="email" name="email" id="email" placeholder="Email Addresses">
+          <p id="error3" class="error">Looks like this is not an email<img class="iconerror" src="./images/icon-error.svg"></p>
+          <input type="password" name="password" id="password" placeholder="Password">
+          <p id="error4" class="error">Password cannot be empty<img class="iconerror" src="./images/icon-error.svg"></p>
+          <button type="button" id="submit">Claim your free trial</button>
+        </form>
+        <p id="terms">By clicking the button, you are agreeing to our <span id="pink">Terms and Services</span></p>
+      </div>
+    </section>
+  </main>
+  <script src="./dist/app.js"></script>
+</body>
+</html>
